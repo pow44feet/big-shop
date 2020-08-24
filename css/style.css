@@ -221,6 +221,15 @@ body {
   }
 }
 
+@media (min-width: 1199.98px) {
+  .filter-item:hover {
+    color: #8d83f9;
+  }
+  .filter-item:hover.active {
+    color: #b394fa;
+  }
+}
+
 .mail-form-text {
   font-family: 'Open Sans';
   font-weight: 400;
@@ -268,7 +277,6 @@ body {
   font-weight: 600;
   font-size: 20px;
   line-height: 60px;
-  border: 1px solid transparent;
   border-radius: 45px;
   overflow: hidden;
 }
@@ -291,7 +299,7 @@ body {
 .button-arrow span:after {
   content: '\f30b';
   position: relative;
-  top: 1.5px;
+  top: 1px;
   left: 0;
   padding-left: 15px;
   font-family: 'Font Awesome 5 Free';
@@ -311,13 +319,6 @@ body {
 .button-shadow-light-blue {
   -webkit-box-shadow: -1px 5px 23.75px 1.25px rgba(189, 227, 239, 0.75);
   box-shadow: -1px 5px 23.75px 1.25px rgba(189, 227, 239, 0.75);
-}
-
-@media (min-width: 1199.98px) {
-  .button-shadow-light-blue:hover {
-    -webkit-box-shadow: -1px 5px 23.75px 1.25px rgba(240, 239, 254, 0.75);
-    box-shadow: -1px 5px 23.75px 1.25px rgba(240, 239, 254, 0.75);
-  }
 }
 
 .button-blue-purple-grad {
