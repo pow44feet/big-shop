@@ -1,0 +1,33 @@
+//-------------------<focus-input-text>-------------------//
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+/* Firefox < 19 */
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+/* Firefox > 19 */
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+/* Internet Explorer 10 */
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+//-------------------<focus-textarea-text>-------------------//
+textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+/* Firefox < 19 */
+textarea:focus:-moz-placeholder {
+    color: transparent;
+}
+/* Firefox > 19 */
+textarea:focus::-moz-placeholder {
+    color: transparent;
+}
+/* Internet Explorer 10 */
+textarea:focus:-ms-input-placeholder {
+    color: transparent;
+}

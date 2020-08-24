@@ -1,0 +1,9 @@
+//Миксины
+@mixin flexbox() {display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;/*font-size: 0;*/}
+@mixin flexorder($val){-webkit-box-ordinal-group: $val;-moz-box-ordinal-group: $val;-ms-flex-order: $val;-webkit-order: $val;order: $val;}
+@mixin anim-03() {transition: all .3s ease-in-out 0s;}
+@mixin anim-01() {transition: all .1s ease-in-out 0s;}
+
+//Font Mixins
+@mixin font-regular() {font-family: 'Open Sans'; font-weight: 600;}
+@mixin font-medium() {font-family: 'Open Sans'; font-weight: 700;}
