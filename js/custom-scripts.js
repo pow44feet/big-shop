@@ -2,11 +2,11 @@
 $('.filter-item').click(function(event) {
   var i=$(this).data('filter');
   if (i=="Watches") {
-    $('.product').show();
+    $('.product-filter').show();
   }
   else {
-    $('.product').hide();
-    $('.product.'+i).show();
+    $('.product-filter').hide();
+    $('.product-filter.'+i).show();
   }
   $('.filter-item').removeClass('active');
   $(this).addClass('active');
