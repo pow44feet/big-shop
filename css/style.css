@@ -276,16 +276,142 @@ body {
 .button-white {
   color: #151515;
   background-color: #fcfcfc;
+  -webkit-transition: all .3s ease-in-out 0s;
+  -o-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+}
+
+@media (min-width: 1199.98px) {
+  .button-white:hover {
+    background-color: #fcfcfc;
+    color: #8c84f9;
+  }
 }
 
 .button-arrow span:after {
   content: '\f30b';
   position: relative;
-  top: 2px;
+  top: 1.5px;
+  left: 0;
   padding-left: 15px;
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  color: #7048e2;
+  color: #8c84f9;
+  -webkit-transition: all .3s ease-in-out 0s;
+  -o-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+}
+
+@media (min-width: 1199.98px) {
+  .button-arrow:hover span:after {
+    left: 6px;
+  }
+}
+
+.button-shadow-light-blue {
+  -webkit-box-shadow: -1px 5px 23.75px 1.25px rgba(189, 227, 239, 0.75);
+  box-shadow: -1px 5px 23.75px 1.25px rgba(189, 227, 239, 0.75);
+}
+
+@media (min-width: 1199.98px) {
+  .button-shadow-light-blue:hover {
+    -webkit-box-shadow: -1px 5px 23.75px 1.25px rgba(240, 239, 254, 0.75);
+    box-shadow: -1px 5px 23.75px 1.25px rgba(240, 239, 254, 0.75);
+  }
+}
+
+.button-blue-purple-grad {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  background: #8c84f9;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #8c84f9 0%, #a165f4 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #8c84f9 0%, #a165f4 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#8c84f9), to(#a165f4));
+  background: -o-linear-gradient(left, #8c84f9 0%, #a165f4 100%);
+  background: linear-gradient(to right, #8c84f9 0%, #a165f4 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c84f9', endColorstr='#a165f4',GradientType=1 );
+  /* IE6-9 */
+}
+
+.button-blue-purple-grad:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: all .3s ease-in-out 0s;
+  -o-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+}
+
+@media (min-width: 1199.98px) {
+  .button-blue-purple-grad:hover {
+    color: #7048e2;
+  }
+  .button-blue-purple-grad:hover:before {
+    opacity: 1;
+  }
+}
+
+.button-blue-purple-reverse {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  background: #8c84f9;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #8c84f9 0%, #a165f4 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #8c84f9 0%, #a165f4 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#8c84f9), to(#a165f4));
+  background: -o-linear-gradient(left, #8c84f9 0%, #a165f4 100%);
+  background: linear-gradient(to right, #8c84f9 0%, #a165f4 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c84f9', endColorstr='#a165f4',GradientType=1 );
+  /* IE6-9 */
+}
+
+.button-blue-purple-reverse:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #a165f4;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #a165f4 0%, #8c84f9 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #a165f4 0%, #8c84f9 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#a165f4), to(#8c84f9));
+  background: -o-linear-gradient(left, #a165f4 0%, #8c84f9 100%);
+  background: linear-gradient(to right, #a165f4 0%, #8c84f9 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a165f4', endColorstr='#8c84f9',GradientType=1 );
+  /* IE6-9 */
+  opacity: 0;
+  -webkit-transition: all .3s ease-in-out 0s;
+  -o-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+}
+
+@media (min-width: 1199.98px) {
+  .button-blue-purple-reverse:hover:before {
+    opacity: 1;
+  }
 }
 
 .box-counter {
@@ -1060,7 +1186,6 @@ body {
 .showcase {
   position: relative;
   z-index: 1;
-  overflow: hidden;
 }
 
 .showcase__outer-border {
