@@ -1390,6 +1390,9 @@ body {
   line-height: 26px;
   color: #404040;
   padding: 5px;
+  -webkit-transition: all .3s ease-in-out 0s;
+  -o-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
 }
 
 .footer-social-item {
@@ -1448,6 +1451,12 @@ body {
 
 .footer-social-item:hover .fontawesome-letter {
   color: #fff;
+}
+
+@media (min-width: 1199.98px) {
+  .footer-menu-item:hover {
+    color: #8d83f9;
+  }
 }
 
 @media (max-width: 649.98px) {
