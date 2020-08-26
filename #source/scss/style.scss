@@ -152,6 +152,7 @@ body {
 }
 @media (max-width:767.98px){
 	.header {
+		padding-top: 60px;
 		&__top {flex-direction: column;}
 		&__logo {margin-bottom: 15px;}
 		&__menu {align-self: flex-end;}
@@ -174,6 +175,27 @@ body {
 		&__form {width: 100%;}
 	}
 	.collection-item {display: none;}
+}
+@media screen and (orientation: landscape) and (max-height: 600px){
+	.header {
+		height: auto;
+		padding: 30px 0;
+		&__top {flex-direction: row;}
+		&__logo {
+			@include flexbox();
+			flex-direction: column;
+			justify-content: center;
+			margin-bottom: 0;
+		}
+	}
+}
+@media screen and (orientation: landscape) and (max-width: 650px){
+	.header {
+		&__top {flex-direction: column;}
+		&__logo {align-self: center; margin-bottom: 3vh;}
+		&__menu {align-self: center;}
+		&__promotion {justify-content: center; text-align: center;}
+	}
 }
 /* HEADER */
 
@@ -200,6 +222,11 @@ body {
 }
 @media (max-width:1379.98px) {
 	.arrivals {overflow: hidden;}
+}
+@media (max-width:767.98px) {
+	.arrivals {
+		&__block {padding-top: 60px;}
+	}
 }
 /*ARRIVALS*/
 
@@ -307,6 +334,13 @@ body {
 //Showcase media quaries
 @media (max-width:1379.98px) {
 	.showcase {overflow: hidden;}
+}
+@media (max-width:767.98px) {
+	.showcase {
+		&__block {padding-top: 60px;}
+		&__top {margin-bottom: 60px;}
+		&__top-title {margin-bottom: 60px;}
+	}
 }
 /*SHOWCASE*/
 
@@ -443,6 +477,11 @@ body {
 @media (min-width:1199.98px){
 	.footer-menu-item {
 		&:hover {color: $purple-shade-3;}
+	}
+}
+@media (max-width:767.98px) {
+	.footer {
+		&__inner {padding-top: 50px;}
 	}
 }
 @media (max-width:649.98px) {

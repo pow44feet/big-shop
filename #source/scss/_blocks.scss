@@ -22,6 +22,10 @@ body {
 		font-size: 56px;
 		line-height: 61px;
 	}
+	@media screen and (orientation: landscape) and (max-height: 600px){
+		font-size: 80px;
+		line-height: 80px;
+	}
 }
 .title-medium {
 	@include font-medium();
@@ -68,6 +72,10 @@ body {
 	@media (max-width:479.98px){
 		font-size: 33px;
 		line-height: 66px;
+	}
+	@media screen and (orientation: landscape) and (max-height: 600px){
+		font-size: 35px;
+		line-height: 60px;
 	}
 }
 .subtitle-regular {
